@@ -36,4 +36,4 @@ python scripts/check_spatial_match.py `
 
 如果 Shapefile 的范围与影像不重叠，那么每一个滑动窗口都没有建筑物，导出0对样本是合理结果。此时应重新确认影像与标注的对应关系，而不是删除空标签判断。
 
-完整项目曾发现 `3.tif + sf.shp` 不重叠；经核对后，正确组合是 `2.tif + sf.shp` 与 `3.tif + sf2.shp`。这也是将空间预检设为独立步骤的原因。
+例如完整项目有 `sample2.tif + sf1.shp` 不重叠；经核对后，正确组合是 `sample1.tif + sf1.shp` 与 `sample2.tif + sf2.shp`。这也是将空间预检设为独立步骤的原因。
