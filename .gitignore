@@ -1,0 +1,35 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+.venv/
+venv/
+
+# Generated tutorial outputs
+outputs/
+runs/
+logs/
+*.log
+
+# Large source data and model artifacts
+*.tif.ovr
+*.aux.xml
+*.pdparams
+*.pdopt
+*.pdmodel
+*.pdiparams
+*.pdiparams.info
+*.zip
+
+# ArcGIS temporary and project state
+*.aprx
+*.gdb/
+.backups/
+Index/
+GpMessages/
+
+# Editors and operating systems
+.idea/
+.vscode/
+Thumbs.db
+.DS_Store

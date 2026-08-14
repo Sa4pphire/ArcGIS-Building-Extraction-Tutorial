@@ -1,0 +1,8 @@
+# Core data-preparation dependencies. Install a GDAL build compatible with
+# your Python version and local GDAL runtime before installing this file.
+numpy>=1.24
+Pillow>=10.0
+tqdm>=4.65
+
+# Model training additionally requires PaddlePaddle and PaddleRS. Their GPU
+# builds depend on the CUDA version, so follow tutorials/04_paddlers_unet.md.
