@@ -2,7 +2,7 @@
 
 本章默认你已经安装并启动GeoView，只介绍如何导入训练好的UNet并查看建筑物分割结果。
 
-关于GeoView:https://github.com/PaddleCV-SIG/GeoView
+关于GeoView:[GeoView](https://github.com/PaddleCV-SIG/GeoView)
 
 ## 1. 选择最佳模型
 
