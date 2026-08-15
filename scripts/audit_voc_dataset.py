@@ -1,4 +1,4 @@
-"""Audit image/XML pairing, classes, boxes and spatial split coverage."""
+"""审核图像/XML配对、类别、框和空间分割覆盖范围。"""
 
 from __future__ import annotations
 
@@ -11,7 +11,7 @@ from PIL import Image
 
 from geo_utils import repository_root
 
-
+""" 配置 ArgumentParser 对象 """
 def build_parser() -> argparse.ArgumentParser:
     root = repository_root()
     parser = argparse.ArgumentParser(description="审计PASCAL VOC建筑物检测数据集")
@@ -19,7 +19,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--write-report", action="store_true")
     return parser
 
-
+""" 读取文件名 """
 def read_split(path: Path) -> set[str]:
     return {
         line.split()[0].rsplit("/", 1)[-1].rsplit(".", 1)[0]
