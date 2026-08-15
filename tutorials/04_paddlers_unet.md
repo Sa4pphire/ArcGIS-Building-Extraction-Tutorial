@@ -1,4 +1,5 @@
 # 第4章：使用 PaddleRS 训练 UNet
+现在我们已经有了image和label文件夹中的数据，现在我们来用这些数据进行UNet模型训练
 
 在PaddleRS官方仓库中了解Paddle: [Paddle](https://github.com/PaddlePaddle/PaddleRS/tree/develop)
 
