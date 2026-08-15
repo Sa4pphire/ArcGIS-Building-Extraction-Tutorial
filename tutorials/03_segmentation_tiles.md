@@ -2,7 +2,7 @@
 
 制作切片有两种方式。想快速完成数据制作，可以使用图形界面；想了解处理原理或批量处理，可以使用本仓库脚本。
 
-![待处理图像](./docs/assets/demo_raster.jpg)
+![待处理图像]<img width="1024" height="1024" alt="demo_raster" src="https://github.com/user-attachments/assets/2999e04e-905a-4a36-803b-4f7c6a0fc56c" />
 
 ## 1. 方法一：使用图形界面工具
 
@@ -41,7 +41,8 @@ python scripts/export_segmentation_tiles.py `
 
 若输出目录已有本教程生成的切片，确认后使用 `--overwrite`。
 
-![切片后的jpg图像](./docs/assets/sample_tile.jpg)
+![切片后生成的单块jpg图像]<img width="512" height="512" alt="sample_tile" src="https://github.com/user-attachments/assets/8256a3b0-9832-468d-8e23-1c6b1ebbc0fd" />
+
 
 ## 3. 参数含义
 
@@ -68,7 +69,7 @@ python scripts/export_segmentation_tiles.py `
 - 标签值仅包含0和255；
 - 不存在全零标签。
 
-![切片后的用于训练的图像](./docs/assets/sample_mask.jpg)
+![切片后用于训练的mask图像 ]<img width="512" height="512" alt="sample_mask" src="https://github.com/user-attachments/assets/ac98f835-71c4-4e91-b66c-528e80fb1fe2" />
 
 
 ## 5. 空间划分
