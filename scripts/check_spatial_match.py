@@ -1,4 +1,4 @@
-"""Check projection and extent compatibility before producing tiles."""
+"""制作图块前，检查投影和范围兼容性。"""
 
 from __future__ import annotations
 
