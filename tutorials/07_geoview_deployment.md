@@ -2,6 +2,8 @@
 
 本章默认你已经安装并启动GeoView，只介绍如何导入训练好的UNet并查看建筑物分割结果。
 
+关于GeoView:https://github.com/PaddleCV-SIG/GeoView
+
 ## 1. 选择最佳模型
 
 训练目录中通常包含 `best_model` 和多个 `epoch_N` 检查点。用于检验和部署时应选择验证集表现最好的 `best_model`，不要因为最后一轮编号最大就直接使用它。
