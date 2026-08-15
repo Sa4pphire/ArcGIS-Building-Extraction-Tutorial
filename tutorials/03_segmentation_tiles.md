@@ -2,7 +2,9 @@
 
 制作切片有两种方式。想快速完成数据制作，可以使用图形界面；想了解处理原理或批量处理，可以使用本仓库脚本。
 
-![待处理图像]<img width="1024" height="1024" alt="demo_raster" src="https://github.com/user-attachments/assets/2999e04e-905a-4a36-803b-4f7c6a0fc56c" />
+<img width="700" height="700" alt="demo_raster" src="https://github.com/user-attachments/assets/2999e04e-905a-4a36-803b-4f7c6a0fc56c" />
+
+完整图像 将对其进行切片处理进行训练
 
 ## 1. 方法一：使用图形界面工具
 
@@ -41,7 +43,6 @@ python scripts/export_segmentation_tiles.py `
 
 若输出目录已有本教程生成的切片，确认后使用 `--overwrite`。
 
-![切片后生成的单块jpg图像]<img width="512" height="512" alt="sample_tile" src="https://github.com/user-attachments/assets/8256a3b0-9832-468d-8e23-1c6b1ebbc0fd" />
 
 
 ## 3. 参数含义
@@ -69,7 +70,19 @@ python scripts/export_segmentation_tiles.py `
 - 标签值仅包含0和255；
 - 不存在全零标签。
 
-![切片后用于训练的mask图像 ]<img width="512" height="512" alt="sample_mask" src="https://github.com/user-attachments/assets/ac98f835-71c4-4e91-b66c-528e80fb1fe2" />
+### 一一对应演示
+
+
+<img width="256" height="256" alt="sample_tile" src="https://github.com/user-attachments/assets/8256a3b0-9832-468d-8e23-1c6b1ebbc0fd" />
+
+切片后的jpg图像,与下方的mask图像对应。单张分辨率为预设的512x512，其在输出文件夹image中被命名为` corp_示例编号1 `,对应下方生成的label中生成的文件
+
+<img width="256" height="256" alt="sample_mask_overlay" src="https://github.com/user-attachments/assets/7871ae23-ed33-4208-94ba-bd5eb69e5dec" />
+
+
+<img width="256" height="256" alt="sample_mask" src="https://github.com/user-attachments/assets/ac98f835-71c4-4e91-b66c-528e80fb1fe2" />
+
+切片后的在label文件夹中生成的png图像,单张分辨率为预设的512x512，其在输出文件夹label中被命名为` corp_示例编号1 `,对应上方生成的image中生成的文件
 
 
 ## 5. 空间划分
