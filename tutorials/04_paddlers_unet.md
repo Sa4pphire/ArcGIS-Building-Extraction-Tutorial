@@ -1,5 +1,7 @@
 # 第4章：使用 PaddleRS 训练 UNet
 
+在PaddleRS官方仓库中了解Paddle: [Paddle](https://github.com/PaddlePaddle/PaddleRS/tree/develop)
+
 ## 1. 安装原则
 
 PaddlePaddle 的CPU/GPU安装包与操作系统、Python版本和CUDA版本有关。请先按飞桨官方安装说明选择匹配版本，再安装或准备 PaddleRS。
