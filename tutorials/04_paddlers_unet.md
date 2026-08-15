@@ -53,3 +53,9 @@ python scripts/train_unet.py --epochs 30 --batch-size 2
 显存不足时先减小 `--batch-size`。没有CUDA时脚本会回退到CPU，也可以显式添加 `--cpu`。
 
 正式数据集应包含足够多的区域和建筑形态。仓库演示数据只适合确认流程，不适合训练可部署模型。
+
+训练完成后 输出模型数据应该是如下的格式：
+<img width="838" height="722" alt="image" src="https://github.com/user-attachments/assets/2622316c-7d2e-4de8-b710-7496595e6784" />
+
+而best_model中则为所有训练轮次中表现最好的模型，现在需要将该模型导出来验证训练效果，请阅读下一章
+
