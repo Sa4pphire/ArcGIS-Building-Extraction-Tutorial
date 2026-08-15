@@ -2,6 +2,8 @@
 
 制作切片有两种方式。想快速完成数据制作，可以使用图形界面；想了解处理原理或批量处理，可以使用本仓库脚本。
 
+![待处理图像](./docs/assets/demo_raster.jpg)
+
 ## 1. 方法一：使用图形界面工具
 
 [Remote-sensing-image-Segment](https://github.com/Sa4pphire/Remote-sensing-image-Segment) 提供了现成的图形界面，可以选择遥感影像、Shapefile和输出目录来制作训练切片。
@@ -39,6 +41,8 @@ python scripts/export_segmentation_tiles.py `
 
 若输出目录已有本教程生成的切片，确认后使用 `--overwrite`。
 
+![切片后的jpg图像](./docs/assets/sample_tile.jpg)
+
 ## 3. 参数含义
 
 - `window-size=512`：每个训练样本为512×512像素；
@@ -63,6 +67,9 @@ python scripts/export_segmentation_tiles.py `
 - 尺寸都是512×512；
 - 标签值仅包含0和255；
 - 不存在全零标签。
+
+![切片后的用于训练的图像](./docs/assets/sample_mask.jpg)
+
 
 ## 5. 空间划分
 
